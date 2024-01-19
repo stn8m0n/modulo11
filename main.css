@@ -24,11 +24,9 @@ header {
 
 .submenu {
     display: none;
-    background-color: red;
-    position: absolute;
 }
 
-.menu li {
+.menu > li {
     float: left;
     list-style: none;
     padding: 16px;
@@ -39,7 +37,7 @@ header {
     clear: both;
 ]
 
-.menuli:hover .submenu {
+.menu li:hover .submenu {
     display: block;
 }
 
