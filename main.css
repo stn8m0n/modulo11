@@ -60,7 +60,7 @@ header {
 
 .conteudo {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 70% 30%; /*divisão entre coluna horizontal*/
 }
 
 .noticia img {
@@ -71,7 +71,7 @@ header {
     margin-bottom: 56px;
 }
 
-.destaque .noticia {
+.destaque .noticia a {
     display: flex;
     font-size: 2em;
 }
