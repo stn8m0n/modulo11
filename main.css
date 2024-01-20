@@ -23,12 +23,12 @@ header {
 }
 
 .submenu {
-    display: block;
-    background-color: orange;
+    display: none;
+    border: 1px solid red;
     position: absolute;
     left: 0;
-    max-width: 300px;
-    top: 0;
+    width: 300px;
+    top: 100%; /*comecando no inicio do seu container*/
 }
 
 .menu > li { /* > significa que sera aplicado apenas no LI de .menu*/
@@ -45,6 +45,10 @@ header {
 
 .menu li:hover .submenu { /*hover quando passar o mouse por cima*/
     display: block; 
+}
+
+.menu li:hover {
+    border-color: red;
 }
 
 .submenu li {
