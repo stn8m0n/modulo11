@@ -18,30 +18,38 @@ header .container{
 }
 
 header {
-    padding: 16px 0;
-    border-bottom: 1px solid #ccc
+    padding: 16px 0 0; /*16 é referente a base e parte de cima, 0 laterais*/
+    border-bottom: 1px solid #ccc;
 }
 
 .submenu {
-    display: none;
+    display: block;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    max-width: 300px;
+    top: 0;
 }
 
-.menu > li {
+.menu > li { /* > significa que sera aplicado apenas no LI de .menu*/
     float: left;
     list-style: none;
-    padding: 16px;
+    padding: 16px; /*Só 16 aplica em todas as bordas*/
     border-top: 4px solid transparent;
+    position: relative; /* contém o elemento dentro do container*/
 }
 
-.clear [
+.clear {
     clear: both;
-]
+}
 
-.menu li:hover .submenu {
-    display: block;
+.menu li:hover .submenu { /*hover quando passar o mouse por cima*/
+    display: block; 
 }
 
 .submenu li {
     display: block;
     padding: 8px;
 }
+
+/*parei no 17:32*/
