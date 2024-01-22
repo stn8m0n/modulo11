@@ -94,9 +94,7 @@ aside .noticia {
 
 .noticias {
     display: grid;
-    grid-template-columns: repeat( 3, 32,6%);
+    grid-template-columns: repeat (3, 32,6%);
     column-gap: 1%;
     row-gap: 5%;
-
-
 }
