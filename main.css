@@ -1,100 +1,239 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Roboto, sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
 }
+
+/* regra do container */
 
 .container {
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* estilizando o Header, para alinhar na vertical, align-items: center */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+/* estilizar o header */
 
 header {
-    padding: 16px 0 0; /*16 é referente a base e parte de cima, 0 laterais*/
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 56px;
+  padding: 16px 0 0;
+  border-bottom: 1px solid #333;
+  margin-bottom: 56px;
 }
+
+/* Criar uma regra para o UL que esta dentro do LI */
+/* o submenu menu nao estara visivel */
 
 .submenu {
-    display: none;
-    border: 1px solid red;
-    background-color: #fff;
-    position: absolute;
-    left: 0;
-    width: 300px;
-    top: 100%; /*comecando no inicio do seu container*/
+  display: none;
+  border-color: 1px solid red;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  width: 300px;
+  top: 100%;
 }
 
-.menu > li { /* > significa que sera aplicado apenas no LI de .menu*/
-    float: left;
-    list-style: none;
-    padding: 16px; /*Só 16 aplica em todas as bordas*/
-    border-top: 4px solid transparent;
-    position: relative; /* contém o elemento dentro do container*/
+/* estilizar o li dentro do menu */
+.menu > li {
+  float: left;
+  list-style: none;
+  padding: 16px;
+  border-top: 4px solid transparent;
+  position: relative;
 }
 
+/* no html tenho que criar um elemento para esse cara */
 .clear {
-    clear: both;
+  clear: both;
 }
 
-.menu li:hover .submenu { /*hover quando passar o mouse por cima*/
-    display: block; 
+.menu li:hover .submenu {
+  display: block;
 }
 
 .menu li:hover {
-    border-color: red;
+  border-color: green;
 }
+/* eles estarao o embaixo do outro */
 
 .submenu li {
-    display: block;
-    padding: 8px;
+  display: block;
+  padding: 8px;
 }
 
+/* fazendo o layout em colunas */
 .conteudo {
-    display: grid;
-    grid-template-columns: 70% 30%; /*divisão entre coluna horizontal*/
+  display: grid;
+  grid-template-columns: 70% 30%;
 }
 
 .noticia img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .destaque {
-    margin-bottom: 56px;
+  margin-bottom: 56px;
 }
+
+/* estilizar a sessao de destaque */
 
 .destaque .noticia a {
-    display: flex;
-    font-size: 2em;
+  display: flex;
+  font-size: 2em;
 }
+
+/* aplicar uma margem direita da imagem */
 
 .destaque .noticia img {
-    margin-right: 8px;
+  margin-right: 8px;
 }
+
+/* margem inferior */
 
 section h2 {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
-aside{
-    padding-left: 40px;
+/* estilizar a barra lateral */
+
+aside {
+  padding-left: 40px;
 }
 
 aside .noticia {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .noticias {
-    display: grid;
-    grid-template-columns: repeat (3, 32,6%);
-    column-gap: 1%;
-    row-gap: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 32.6%);
+  column-gap: 1%;
+  row-gap: 5%;
+}* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+/* regra do container */
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* estilizando o Header, para alinhar na vertical, align-items: center */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* estilizar o header */
+
+header {
+  padding: 16px 0 0;
+  border-bottom: 1px solid #333;
+  margin-bottom: 56px;
+}
+
+/* Criar uma regra para o UL que esta dentro do LI */
+/* o submenu menu nao estara visivel */
+
+.submenu {
+  display: none;
+  border-color: 1px solid red;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  width: 300px;
+  top: 100%;
+}
+
+/* estilizar o li dentro do menu */
+.menu > li {
+  float: left;
+  list-style: none;
+  padding: 16px;
+  border-top: 4px solid transparent;
+  position: relative;
+}
+
+/* no html tenho que criar um elemento para esse cara */
+.clear {
+  clear: both;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.menu li:hover {
+  border-color: green;
+}
+/* eles estarao o embaixo do outro */
+
+.submenu li {
+  display: block;
+  padding: 8px;
+}
+
+/* fazendo o layout em colunas */
+.conteudo {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.noticia img {
+  max-width: 100%;
+}
+
+.destaque {
+  margin-bottom: 56px;
+}
+
+/* estilizar a sessao de destaque */
+
+.destaque .noticia a {
+  display: flex;
+  font-size: 2em;
+}
+
+/* aplicar uma margem direita da imagem */
+
+.destaque .noticia img {
+  margin-right: 8px;
+}
+
+/* margem inferior */
+
+section h2 {
+  margin-bottom: 32px;
+}
+
+/* estilizar a barra lateral */
+
+aside {
+  padding-left: 40px;
+}
+
+aside .noticia {
+  margin-bottom: 24px;
+}
+
+.noticias {
+  display: grid;
+  grid-template-columns: repeat(3, 32.6%);
+  column-gap: 1%;
+  row-gap: 5%;
 }
