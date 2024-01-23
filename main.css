@@ -234,6 +234,6 @@ aside .noticia {
 .noticias {
   display: grid;
   grid-template-columns: repeat(3, 32.6%);
-  column-gap: 1%;
-  row-gap: 5%;
+  column-gap: 1%; /*espaçamento entre as colunas*/
+  row-gap: 5%;/*espachemento das linhas*/
 }
