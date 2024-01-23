@@ -60,7 +60,7 @@ header {
 }
 
 .menu li:hover {
-  border-color: green;
+  border-color: red;
 }
 /* eles estarao o embaixo do outro */
 
@@ -238,7 +238,7 @@ aside .noticia {
   row-gap: 5%;
 }
 
-@media screen and (max-width: 767px) { /*configuração para responsividade mobile*/
+@media screen and (max-width: 767px) { /*configuração responsividade mobile phone base iphone se*/
   .conteudo {
     display: block;
   }
@@ -301,5 +301,23 @@ aside .noticia {
 
   .botao-menu button {
     padding: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .botao-menu {
+    display: none;
+  }
+
+  .destaque .noticia a {
+    font-size: 1.5em;
+  }
+
+  .noticias {
+    grid-template-columns: repeat(2, 49%);
   }
 }
